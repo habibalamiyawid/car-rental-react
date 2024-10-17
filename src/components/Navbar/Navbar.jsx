@@ -27,8 +27,8 @@ const NavLinks=
 ]
 const Navbar = ({theme, setTheme}) => {
   return (
-    <nav className="shadow-md bg-white dark:bg-dark dark:text-white ">
-      <div className="container">
+    <nav className="shadow-md bg-white dark:bg-dark dark:text-white duration-300">
+      <div className="container md:py-0">
         <div className="flex justify-between items-center">
            <div>
               <h1 className="text-3xl font-bold font-serif">Car Rental</h1>
@@ -38,7 +38,7 @@ const Navbar = ({theme, setTheme}) => {
                 {NavLinks.map((data)=>(
                   <li key={data.id} className='py-4'>
                   <a className="py-2 hover:border-b-2 hover:text-primary
-                  hover:border-primary transition-colors duration-500 text-lg font medium"
+                  hover:border-primary transition-colors duration-500 text-lg font medium cursor-pointer"
                   href={data.link}>
                     {data.name}
                   </a>
