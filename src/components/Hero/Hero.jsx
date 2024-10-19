@@ -1,13 +1,14 @@
 import React from 'react';
 import carPng from '../../assets/car.png';
 
-const Hero = () => {
+const Hero = ({theme}) => {
   return (
     <div className="dark:bg-dark dark:text-white duration-300 relative -z-20">
        <div className="container min-h-[620px] flex">
          <div className="grid place-items-center grid-cols-1 sm:grid-cols-2">
             <div className="order-1 sm:order-2">
-                <img src={theme==="dark"? carPng : yellowCarPng} alt=""
+                <img src={theme === "dark" ? carPng : yellowCarPng} 
+                alt=""
                 className="relative -z-10 max-h-[600px] sm:scale-125"
             />
             </div>
