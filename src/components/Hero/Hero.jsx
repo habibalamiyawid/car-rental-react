@@ -19,15 +19,20 @@ const Hero = ({theme}) => {
             <div className="order-2 sm:order-1 space-y-5 sm:pr-32">
                 <p 
                 data-aos="fade-up"
-                data-aos-delay="600"
                 className="text-primary text-2xl font-serif">Effortless</p>
                 <h1 
                 data-aos="fade-up"
                 data-aos-delay="600"                
                 className="text-5xl lg:text-7xl font-semibold font-serif">Car Rental </h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim ipsum suscipit ea deleniti provident error distinctio architecto aut!                  
+                <p data-aos="fade-up"
+                data-aos-delay="1000"  
+                >Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim ipsum suscipit ea deleniti provident error distinctio architecto aut!                  
                 </p>
-                <button className="btn bg-primary text-black px-6 py-2 rounded-md hover:bg-primary/80 duration-300">Get Started</button>
+                <button
+                data-aos="fade-up"
+                data-aos-duration="1500" 
+                
+                className="btn bg-primary text-black px-6 py-2 rounded-md hover:bg-primary/80 duration-300">Get Started</button>
             </div>
           
          </div>
