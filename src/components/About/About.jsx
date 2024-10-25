@@ -8,7 +8,9 @@ const About = () => {
             <div className="grid grid-cols-1
             sm:grid-cols-2 place-items-center">
                 <div>
-                    <img src={CarPng} alt="" />
+                    <img src={CarPng} alt="" 
+                    className="sm:scale-105
+                    sm:-translate-x-11 max-h-[300px] drop-shadow-[]"/>
                 </div>
                 <div>
                  <div className="space-y-5 sm:p">
@@ -21,6 +23,12 @@ const About = () => {
                     <p>
                       Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus, earum.
                     </p>
+                    <button
+                        data-aos="fade-up"
+                        data-aos-duration="1500" 
+                
+                          className="btn bg-primary text-black px-6 py-2 rounded-md hover:bg-primary/80 duration-300">Get Started
+                </button>
                  </div>
                 </div>    
             </div>
