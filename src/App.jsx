@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import Navbar from "./components/Navbar/Navbar";
 import Hero from "./components/Hero/Hero";
 import About from "./components/About/About";
+import Services from "./components/Services/Services";
 
 import AOS from 'aos';
 import "aos/dist/aos.css";
@@ -47,6 +48,7 @@ const App = () => {
       <Navbar theme={theme} setTheme={setTheme}/>
       <Hero theme={theme} />
       <About/>
+      <Services/>
     </div>
   )
 }
