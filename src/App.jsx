@@ -3,6 +3,7 @@ import Navbar from "./components/Navbar/Navbar";
 import Hero from "./components/Hero/Hero";
 import About from "./components/About/About";
 import Services from "./components/Services/Services";
+import CarList from "./components/CarList/CarList";
 
 import AOS from 'aos';
 import "aos/dist/aos.css";
@@ -49,6 +50,7 @@ const App = () => {
       <Hero theme={theme} />
       <About/>
       <Services/>
+      <CarList/>
     </div>
   )
 }
