@@ -7,6 +7,7 @@ import CarList from "./components/CarList/CarList";
 
 import AOS from 'aos';
 import "aos/dist/aos.css";
+import Testimonial from "./components/Testimonial/Testimonial";
 
 
 const App = () => {
@@ -51,6 +52,7 @@ const App = () => {
       <About/>
       <Services/>
       <CarList/>
+      <Testimonial/>
     </div>
   )
 }
