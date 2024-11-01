@@ -53,6 +53,7 @@ const App = () => {
       <Services/>
       <CarList/>
       <Testimonial/>
+      <AppStoreBanner/>
     </div>
   )
 }
