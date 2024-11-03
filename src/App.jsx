@@ -49,7 +49,6 @@ const App = () => {
 
   return (
     <div>  
-        {/* className="bg-white dark:bg-dark dark:text-white duration-300" */}
       <Navbar theme={theme} setTheme={setTheme}/>
       <Hero theme={theme} />
       <About/>
