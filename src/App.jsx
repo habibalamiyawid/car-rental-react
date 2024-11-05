@@ -6,6 +6,7 @@ import Services from "./components/Services/Services";
 import CarList from "./components/CarList/CarList";
 import AppStoreBanner from "./components/AppStoreBanner/AppStoreBanner";
 import Contact from "./components/Contact/Contact";
+import Footer from "./components/Footer/Footer";
 
 import AOS from 'aos';
 import "aos/dist/aos.css";
