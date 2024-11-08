@@ -21,7 +21,7 @@ const FooterLinks = [
 ]
 const Footer = () => {
   return (
-    <div className="bg-gray-100 dark:bg-dark mt-14 rounded-t-3xl">
+    <div className="bg-gray-100 dark:bg-dark mt-14 ">
       <div className="container">
         <div className="grid md:grid-cols-3 py-5">
           {/* Company Details */}
@@ -52,23 +52,35 @@ const Footer = () => {
             </div>
           </div>
            {/* Navlinks */}
-             <div className="grid grid-cols-2 sm:grid-cols-3 col-span-2 md:pl-10">
+             <div className="grid grid-cols-2 sm:grid-cols-3 col-span-2 md:pl-10"> 
+              {/* first col */}
               <div>
                  <div>
-                   <h1>Important Links</h1>
-                   <ul>
+                   <h1
+                   className="text-xl sm:text-3xl font-bold sm:text-left text-justify mb-3"
+                   >
+                    Important Links</h1>
+                   <ul className="flex flex-col gap-3"
+                   >
                      {
                       FooterLinks.map((data)=>{
                         return(
-                          <div key={data.title}>
+                          <li
+                          key={data.title}
+                          className="cursor-pointer hover:text-primary duration-300">
+                          <span className="mr-2">
+                            &#11162;</span>
+                            <a href={data.link}>{data.title}</a>
+                          </li>
+                      
 
-                          </div>
                         )
                       })
                      }
                    </ul>
                  </div>
               </div>
+              
              </div>
         </div>
       </div>
